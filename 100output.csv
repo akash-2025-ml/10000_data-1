@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D8383,Malicious,0.85,Packer detected (malware indicator), extremely high metadata suspicious score (0.86), high spam score (0.77), VPN/MFA reset phishing attempt, SPF/DMARC fail, total components detected malicious
+D8384,Warning,0.70,Wire transfer request with moderate behavioral sandbox score (0.31), low spam score, expired SSL certificate, SPF fail but no direct malicious indicators
+D8385,Malicious,0.90,Extremely high metadata suspicious score (0.96), document download lure, SPF/DMARC fail, domain tech stack match indicates targeted attack
+D8386,No Action,0.95,Very low spam score, minimal suspicious indicators, high temp email likelihood (0.64) but no malicious behavior, SPF fail but DKIM pass
+D8387,No Action,0.85,Sensitive data request but very low spam score (0.002), bulk message indicator present, otherwise clean profile with valid SSL
+D8388,Warning,0.75,Meeting request with moderate exfiltration behavior (0.47), self-signed SSL certificate, high site visual similarity score (0.78) suggesting phishing
+D8389,Spam,0.80,High exfiltration behavior score (0.70), image-only email, high SSL reputation score (0.81), SPF/DKIM pass but suspicious patterns
+D8390,Spam,0.85,High spam score (0.70), reply path differs from sender, final URL known malicious, self-signed SSL, SPF permerror indicates spoofing
+D8391,Warning,0.70,Legal threat with IOC count of 2, high sandbox execution time (292.92), expired SSL certificate, moderate spam indicators
+D8392,Spam,0.90,Very high sender reputation score (0.70) and AMSI suspicion (0.57), link click lure, SPF/DKIM/DMARC all fail, TLS 1.0 outdated
+D8393,Warning,0.75,Bank detail update with reply path differing from sender, high SMTP IP reputation (0.56), SSL mismatch, SPF neutral suspicious
+D8394,Spam,0.85,VPN/MFA reset phishing with very high spam score (0.79), high AMSI suspicion (0.32), high site visual similarity (0.70) suggesting brand spoofing
+D8395,Malicious,0.95,Wire transfer scam with extreme metadata suspicious score (0.97), very high spam score (0.90), 4 YARA rule matches, high exfiltration behavior
+D8396,Spam,0.80,Document download with high metadata suspicious (0.73) and exfiltration scores (0.74), expired SSL certificate, moderate spam score
+D8397,No Action,0.85,Clean profile with low spam score (0.38), SPF pass, SSL mismatch but minimal other indicators, no malicious content
+D8398,No Action,0.80,Sensitive data request but very low spam score (0.09), expired SSL certificate, SPF pass, minimal risk indicators overall
+D8399,Spam,0.75,Meeting request with high exfiltration behavior (0.59), very high spam score (0.75), HTML-only email, moderate risk
+D8400,Spam,0.80,Very high spam score (0.75), 4 redirect chains, 7 embedded files, no reverse DNS validity, SPF pass but DKIM/DMARC fail
+D8401,Malicious,0.90,DMARC enforced and failed (critical), final URL known malicious, high sender reputation issues (0.63), image-only email, high site visual similarity (0.75)
+D8402,Malicious,0.95,Legal threat with SMTP IP known malicious flag set, any_exploit_pattern_detected, domain known malicious, SPF/DKIM fail
+D8403,Spam,0.85,High metadata suspicious score (0.85), poor sender reputation (0.55), reply path known malicious, link click lure, SPF fail
+D8404,Warning,0.65,Bank detail update with moderate SMTP IP reputation (0.49), otherwise very low risk scores, SPF pass but DKIM fail
+D8405,Spam,0.90,VPN/MFA reset with extremely high AMSI suspicion (0.80), moderate exfiltration behavior, SPF pass but DKIM fail
+D8406,Malicious,0.80,Wire transfer with return_path_mismatch_with_from flag set, high sender domain reputation issues (0.58), any_vbscript_javascript_detected
+D8407,Malicious,0.95,Document download with any_network_call_on_open flag set (critical), extreme exfiltration behavior (0.99), high spam score (0.74)
+D8408,No Action,0.75,Low spam score (0.05), minimal risk indicators, sender reputation moderate, SPF fail but no malicious behavior
+D8409,Warning,0.70,Sensitive data request with high SSL reputation score (0.69), moderate spam score, SPF pass, overall moderate risk
+D8410,Malicious,0.85,Meeting request with return_path_known_malicious flag set, high AMSI suspicion (0.45), high spam score (0.60), unsubscribe link present
+D8411,Spam,0.80,High exfiltration behavior (0.75), URL shortener detected (phishing indicator), high spam score (0.70), SSL mismatch
+D8412,Spam,0.85,Final URL known malicious flag set, high spam score (0.52), no reverse DNS validity, SPF pass but DKIM/DMARC fail
+D8413,Malicious,0.95,Legal threat with reply_path_diff_from_sender, SMTP IP reputation extremely high (0.92), high AMSI suspicion (0.48), very high SSL reputation (0.80)
+D8414,Malicious,0.95,Extremely high spam score (0.92), extreme exfiltration behavior (0.98), URL shortener detected, SPF/DKIM/DMARC all fail
+D8415,Warning,0.70,Bank detail update with high sender reputation (0.74), expired SSL, SPF fail, but low spam score and minimal other indicators
+D8416,Malicious,0.90,VPN/MFA reset with any_network_call_on_open flag set, extreme exfiltration behavior (0.95), high SMTP IP reputation (0.94)
+D8417,Malicious,0.85,Wire transfer with extremely high sender reputation issues (0.96), very high exfiltration behavior (0.82), HTML-only email
+D8418,Warning,0.70,Document download with self-signed SSL, moderate exfiltration behavior (0.55), high site visual similarity (0.80) but low spam score
+D8419,Warning,0.65,Return_path_known_malicious but very low spam score, has_executable_attachment flag but minimal other risk indicators
+D8420,Malicious,0.95,Sensitive data request with DMARC_enforced flag set and failed, 6 URL detections, high spam score (0.67), unsubscribe link present
+D8421,Warning,0.70,Meeting request with 2 IOC matches, moderate exfiltration behavior (0.38), moderate spam score, SPF fail
+D8422,Spam,0.85,Very high exfiltration behavior (0.80), 4 embedded files, extreme unique parent process names (8.40), high metadata suspicious score (0.88)
+D8423,Malicious,0.95,sender_known_malicious flag set (critical), high spam score (0.49), self-signed SSL certificate, SPF pass but sender compromised
+D8424,Malicious,0.90,Legal threat with extreme exfiltration behavior (0.74), SMTP IP known malicious flag set, 5 YARA matches, high spam score (0.63)
+D8425,Spam,0.80,Link click with high behavioral sandbox score (0.53), user_marked_as_spam_before flag set, 7 total components detected malicious
+D8426,Malicious,0.85,Bank detail update with return_path_known_malicious flag set, high spam score (0.64), self-signed SSL, SPF softfail
+D8427,Warning,0.75,VPN/MFA reset with high sender reputation issues (0.47), 3 redirect chains, high SSL reputation (0.49), SPF pass
+D8428,Malicious,0.95,Wire transfer with return_path_known_malicious flag set, extreme exfiltration behavior (0.98), SMTP IP known malicious flag set
+D8429,Malicious,0.85,Document download with return_path_known_malicious flag set, very high exfiltration behavior (0.81), high spam score (0.61)
+D8430,Malicious,0.95,return_path_known_malicious flag set, domain_known_malicious flag set, dmarc_enforced flag set, high SSL reputation (0.60), SPF/DKIM/DMARC all fail
+D8431,Warning,0.65,Sensitive data request with expired SSL, moderate spam score (0.33), high site visual similarity (0.88) but minimal other indicators
+D8432,Spam,0.75,Meeting request with bulk_message_indicator set, high exfiltration behavior (0.77), SPF pass but policy violations

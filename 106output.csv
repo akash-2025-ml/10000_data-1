@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D8683,Malicious,0.85,Link click request with VBScript detected and unscannable attachment present. High metadata suspicious score (0.397) and exfiltration behavior (0.566). VBScript execution is definitive malware indicator.
+D8684,No Action,0.70,Bank detail update request with minimal threat indicators. Good authentication (fail SPF but pass DKIM/DMARC) with low spam score (0.060). Valid SSL and no malicious components detected.
+D8685,Warning,0.75,VPN/MFA reset request with 2 YARA matches and reply path marked malicious. Moderate behavioral sandbox score (0.226) with good authentication. Credential harvesting attempt with mixed indicators.
+D8686,Malicious,0.88,Wire transfer request with return path marked malicious and very high behavioral sandbox score (0.858). High urgency keywords (0.723) with exfiltration behavior (0.570). Confirmed malicious return path with behavioral malware.
+D8687,Malicious,0.88,Document download request with executable attachment and very high exfiltration behavior (0.913). Failed authentication with confirmed behavioral malware. High confidence executable-based attack.
+D8688,No Action,0.68,No request type with minimal threat indicators and good authentication (pass SPF, permerror DMARC). Low spam score and valid SSL certificate. Low overall risk profile.
+D8689,No Action,0.65,Sensitive data request with minimal threat indicators and good authentication (pass SPF). Self-signed SSL but low spam score (0.051) and no malicious components.
+D8690,Malicious,0.90,Meeting request with very high behavioral sandbox score (0.896) and long execution time (75.5s). High exfiltration behavior (0.560) with time-delayed execution. High confidence behavioral malware.
+D8691,Warning,0.80,No request type with ActiveX objects detected and exploit pattern present. Behavioral sandbox score (0.184) with 2 embedded files. Failed authentication with moderate threat level.
+D8692,No Action,0.68,No request type with minimal threat indicators and moderate URL reputation (0.124). Good authentication (pass SPF/DKIM) with self-signed SSL. Low risk profile.
+D8693,Warning,0.82,Legal threat request with YARA match and high AMSI suspicion (0.673). Moderate metadata suspicious score (0.267) with expired SSL. Legal threat with suspicious file indicators.
+D8694,Malicious,0.88,Link click request with very high metadata suspicious score (0.737) and exfiltration behavior (0.919). IOC detected with behavioral indicators. High confidence data exfiltration malware.
+D8695,Malicious,0.95,Bank detail update request from sender marked as known malicious. High site similarity (0.621) with permerror DMARC. High confidence known bad actor with BEC attempt.
+D8696,Malicious,0.88,VPN/MFA reset request with reply path marked malicious and high metadata suspicious score (0.649). DNS morphing detected with 2 URLs. Confirmed malicious reply path with credential harvesting.
+D8697,Malicious,0.90,Wire transfer request with exploit pattern and network call detected. DMARC enforced but 4 YARA matches with expired SSL. High spam score (0.652). Confirmed malicious behavior with wire fraud attempt.
+D8698,Malicious,0.88,Document download request with 4 YARA matches and high behavioral sandbox score (0.516). High exfiltration behavior (0.791) with multiple threat indicators. High confidence document-based malware.
+D8699,No Action,0.65,No request type with good sender reputation (0.210) and minimal threats. Failed SPF but pass DMARC with valid SSL. Low risk despite authentication issue.
+D8700,Warning,0.78,Sensitive data request with URL spoof detected and high temp email likelihood (0.307). Failed authentication with URL rendering behavior. Spoofed phishing attempt requiring monitoring.
+D8701,Spam,0.70,Meeting request with DNS morphing detected and very low spam score (0.000). Valid SSL with good authentication. Likely spoofed meeting spam rather than targeted threat.
+D8702,Spam,0.75,No request type with high temp email likelihood (0.184) and very high spam score (0.597). 2 YARA matches with 3 URL redirect chains. Bulk spam campaign with suspicious elements.
+D8703,No Action,0.68,No request type with minimal threat indicators and low spam score. Softfail SPF with self-signed SSL but very low risk profile across all signals.
+D8704,Malicious,0.92,Legal threat request with malicious attachment (count=1) and network call detected. Long execution time (46.8s) with revoked SSL certificate. Confirmed malicious attachment with legal threat delivery.
+D8705,Malicious,0.88,Link click request with very high exfiltration behavior (0.905) and site similarity (0.993). High metadata suspicious score (0.327) with failed authentication. High confidence phishing with data theft.
+D8706,Warning,0.78,Bank detail update request with return path marked malicious and bulk message indicator. Good sender reputation (0.815) but expired SSL. BEC attempt with mixed indicators.
+D8707,Malicious,0.92,VPN/MFA reset request from sender marked as known malicious. High metadata suspicious score (0.136) with embedded file. High confidence credential harvesting from known bad actor.
+D8708,No Action,0.68,Wire transfer request with minimal threat indicators and low spam score (0.000). Failed authentication but no malicious components detected. Low risk despite wire transfer context.
+D8709,Warning,0.78,Document download request with high metadata suspicious score (0.458) and behavioral sandbox score (0.092). Mismatch SSL with failed authentication. Document-based threat attempt.
+D8710,No Action,0.70,No request type with DMARC enforced and high temp email likelihood (0.241). Good authentication (pass SPF, policy DKIM/DMARC) with valid SSL. Low risk despite temporary email.
+D8711,Malicious,0.90,Sensitive data request with domain marked malicious and high spam score (0.659). Unsubscribe link present with expired SSL. Confirmed malicious domain threat.
+D8712,Malicious,0.88,Meeting request with VBScript detected and very high AMSI suspicion (0.907). High temp email likelihood (0.594) with 5 malicious components. High confidence meeting-based malware.
+D8713,Warning,0.80,No request type with high metadata suspicious score (0.754) and AMSI suspicion (0.443). Return path mismatch with expired SSL. Suspicious campaign with evasion indicators.
+D8714,No Action,0.68,No request type with return path marked malicious but minimal other threats. Good authentication (pass SPF, policy DKIM) with valid SSL. Low overall risk profile.
+D8715,Warning,0.80,Legal threat request with URL spoof detected and high exfiltration behavior (0.729). DMARC enforced but spoofing indicators present. Legal threat with behavioral concerns.
+D8716,Malicious,0.90,Link click request with very high exfiltration behavior (0.989) and metadata suspicious score (0.529). 2 YARA matches with embedded file. High confidence behavioral malware with data exfiltration.
+D8717,Malicious,0.90,Bank detail update request with reply path marked malicious and final URL marked malicious. Multiple confirmed malicious indicators with 3 URLs. High confidence BEC with confirmed malicious components.
+D8718,Malicious,0.92,VPN/MFA reset request with 3 malicious attachments detected. DNS morphing with image-only email and high spam score (0.407). Confirmed malicious attachments with credential harvesting attempt.
+D8719,Warning,0.82,Wire transfer request with good sender reputation (0.839) but high exfiltration behavior (0.696). Expired SSL with failed DMARC. Wire transfer with behavioral indicators.
+D8720,Warning,0.80,Document download request with very high temp email likelihood (0.924) and 3 YARA matches. DMARC enforced with suspicious indicators requiring monitoring.
+D8721,No Action,0.65,No request type with good sender reputation (0.322) and minimal threats. Mismatch SSL but good authentication (pass SPF). Low risk profile overall.
+D8722,No Action,0.70,Sensitive data request with good sender reputation (0.245) and minimal malicious indicators. Softfail SPF but very low spam score. Likely legitimate sensitive data request.
+D8723,Malicious,0.85,Meeting request with very high exfiltration behavior (0.864) and YARA match. DMARC enforced with 3 embedded files and expired SSL. High confidence meeting-based malware with data theft.
+D8724,Spam,0.75,No request type with very high metadata suspicious score (0.935) but very low spam score (0.000). Embedded file with failed authentication. Likely suspicious content spam rather than targeted attack.
+D8725,No Action,0.68,No request type with minimal threat indicators despite failed authentication. Valid SSL with low spam score (0.057). Low risk profile across all detection signals.
+D8726,Warning,0.75,Legal threat request with high behavioral sandbox score (0.685) and exfiltration behavior (0.573). Good authentication (pass SPF/DMARC) but behavioral indicators warrant monitoring.
+D8727,Warning,0.78,Link click request with behavioral sandbox score (0.171) and reply path marked malicious. Embedded file with valid SSL. Link-based threat with moderate risk indicators.
+D8728,No Action,0.70,Bank detail update request with minimal threat indicators. Softfail SPF but good URL reputation (0.244) and valid SSL. Low risk bank detail update.
+D8729,Malicious,0.88,VPN/MFA reset request with return path marked malicious and behavioral sandbox score (0.345). Self-signed SSL with very high urgency keywords (0.782). High confidence credential harvesting with confirmed malicious path.
+D8730,Malicious,0.90,Wire transfer request with very high behavioral sandbox score (0.992). Failed authentication with exceptional behavioral indicators. High confidence wire fraud with confirmed behavioral malware.
+D8731,Warning,0.78,Document download request with moderate URL reputation (0.667) and expired SSL. Failed authentication with behavioral indicators. Document-based threat with moderate risk.
+D8732,No Action,0.68,No request type with minimal threat indicators and good authentication (pass SPF). Valid SSL with moderate URL reputation (0.733). Low overall risk profile.

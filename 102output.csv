@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D8483,Malicious,0.95,Wire transfer request with extremely high behavioral sandbox score (0.956) and high exfiltration behavior (0.258). Has 4 malicious components detected with self-signed SSL certificate. Failed DMARC authentication. High confidence wire fraud.
+D8484,Warning,0.75,Document download request with high sender temp email likelihood (0.765) and 7 URLs present. Failed SPF with temperror DMARC. Low domain reputation but no confirmed malicious attachments. Suspicious bulk campaign.
+D8485,No Action,0.65,No request type with good sender domain reputation (0.746) and minimal malicious indicators. Very low spam score (0.630). Passes SPF and DMARC. Likely legitimate email.
+D8486,No Action,0.65,Sensitive data request with very low malicious indicators and minimal spam score (0.057). Mismatch SSL but passes SPF. Domain reputation poor but minimal actual threats detected.
+D8487,Spam,0.75,Meeting request with executable attachment but very high spam score (0.757) and high exfiltration behavior (0.539). Appears to be spam with some suspicious characteristics rather than targeted attack.
+D8488,Malicious,0.88,No request type with file hash marked malicious and 4 URLs. Moderate exfiltration behavior (0.310) with failed DMARC. Confirmed malicious file with network indicators.
+D8489,Spam,0.68,No request type with 4 URLs and mismatch SSL certificate. Low spam score (0.207) but failed DMARC. Appears to be tracking or marketing email.
+D8490,Malicious,0.95,Legal threat request with high sender temp email likelihood (0.766) and very high exfiltration behavior (0.996). Reply path marked malicious with domain also malicious. Failed DMARC. High confidence phishing.
+D8491,Warning,0.70,Link click request with moderate suspicious scores and failed SPF. Low spam score (0.258) suggests targeted attempt. Possible spoofing with moderate risk.
+D8492,Malicious,0.85,Bank detail update request with URL marked as final malicious destination and high spam score (0.540). Classic BEC attempt with confirmed malicious URL.
+D8493,Malicious,0.90,VPN/MFA reset request with 3 YARA matches and high SMTP IP reputation risk (0.830). Mismatch SSL with unsubscribe link present. Failed DMARC. Credential harvesting attempt.
+D8494,Malicious,0.88,Wire transfer request with very high sandbox execution time (46.43s) and high exfiltration behavior (0.681). Expired SSL certificate. Time-delayed malware with wire fraud lure.
+D8495,Malicious,0.92,Document download request with exploit pattern detected and high exfiltration behavior (0.645). Very high spam score (0.834) with mismatch SSL. Failed DMARC. Malware delivery attempt.
+D8496,No Action,0.60,No request type with moderate spam score (0.620) but low threat indicators. Passes authentication. Likely marketing content with minimal risk.
+D8497,Warning,0.75,Sensitive data request with user marked as spam before. High site similarity score (0.553) but minimal current threats. Failed DMARC. Moderate phishing risk.
+D8498,Malicious,0.88,Meeting request with return path marked malicious and very high URL reputation score (0.722). Failed DKIM. High confidence spoofed meeting invitation.
+D8499,Malicious,0.90,No request type with macro-enabled document and VBScript detected. Very high spam score (0.937) with failed authentication. Classic macro malware delivery.
+D8500,Warning,0.70,No request type with URL marked as final malicious but very low spam score (0.363). Mixed indicators suggest moderate risk profile.
+D8501,Malicious,0.88,Legal threat request with high site similarity score (0.660) and very high spam score (0.926). Classic legal threat phishing with behavioral indicators.
+D8502,Warning,0.78,Link click request with 5 YARA matches and self-signed SSL certificate. Moderate spam score (0.830) with suspicious file indicators but not confirmed malicious.
+D8503,Malicious,0.95,Bank detail update request with extremely high sender temp email likelihood (0.893) and very high spam score (0.902). Failed authentication. High confidence BEC attack.
+D8504,Malicious,0.98,VPN/MFA reset request with 1 malicious attachment count and very high metadata suspicious score (0.939). High behavioral sandbox score (0.326) with SMTP IP marked malicious. Critical malware with credential theft.
+D8505,Malicious,0.90,Wire transfer request with extremely high behavioral sandbox score (0.938). Mismatch SSL certificate with failed SPF. High confidence wire fraud with sandbox detection.
+D8506,Warning,0.80,Document download request with DMARC enforced and 7 YARA matches. High SMTP IP reputation risk (0.747) with unsubscribe link. Failed all authentication. Suspicious document campaign.
+D8507,Warning,0.72,No request type with domain marked malicious and 2 URLs. Failed DMARC with poor SMTP IP reputation (0.880). Moderate threat from compromised infrastructure.
+D8508,Malicious,0.88,Sensitive data request with extremely high spam score (0.999) and moderate URL rendering behavior (0.342). High confidence phishing for sensitive information.
+D8509,Warning,0.78,Meeting request with high metadata suspicious score (0.644) and exfiltration behavior (0.778). Self-signed SSL certificate. Failed DKIM. Spear-phishing attempt.
+D8510,Warning,0.75,No request type with DNS morphing detected and self-signed SSL certificate. Failed SPF with unsubscribe link present. Moderate threat with spoofing indicators.
+D8511,No Action,0.62,No request type with moderate sender temp email likelihood (0.340) but minimal threat indicators. Passes authentication. Low risk profile.
+D8512,Malicious,0.85,Legal threat request with very high SMTP IP reputation risk (0.930) and high spam score (0.894). 3 URLs with failed DMARC. Legal threat phishing.
+D8513,Warning,0.80,Link click request with macro-enabled document and 4 embedded files. Failed SPF and DMARC. Very low spam score (0.630) suggests targeted attack.
+D8514,Malicious,0.85,Bank detail update request with reply path marked malicious and expired SSL certificate. High spam score (0.667) with high URL rendering behavior (0.913). BEC with spoofing.
+D8515,Warning,0.80,VPN/MFA reset request with network call on open detected and reply path differs from sender. Good sender reputation suggests compromised account. Failed DMARC.
+D8516,Malicious,0.85,Wire transfer request with high exfiltration behavior (0.638) and moderate spam score (0.507). Failed SPF and DMARC. Targeted wire fraud attempt.
+D8517,Malicious,0.92,Document download request with very high exfiltration behavior (0.963) and high URL reputation score (0.641). Self-signed SSL with failed SPF. High confidence malware.
+D8518,Spam,0.70,No request type with very high URL reputation score (0.892) but minimal other threats. Low spam score (0.349). Likely tracking or marketing content.
+D8519,Warning,0.70,Sensitive data request with SMTP IP marked malicious and moderate spam score (0.500). Failed SPF with mismatch SSL. Moderate phishing risk.
+D8520,Warning,0.75,Meeting request with high exfiltration behavior (0.829) and 1 embedded file. Low spam score (0.290) suggests targeted attack. Moderate threat level.
+D8521,Warning,0.75,No request type with 2 URLs and expired SSL certificate. High sender temp email likelihood (0.597) with moderate spam score (0.632). Mixed threat indicators.
+D8522,Spam,0.72,No request type with image only email flag set and high URL rendering behavior (0.762). Failed DKIM/DMARC. Image-based spam to evade filters.
+D8523,Warning,0.75,Legal threat request with 1 URL redirect chain and high URL reputation score (0.244). Low spam score (0.015) suggests targeted legal phishing attempt.
+D8524,Malicious,0.92,Link click request with 5 YARA matches and very high URL reputation score (0.821). Has 3 malicious components detected. High confidence threat with confirmed malicious elements.
+D8525,Warning,0.78,Bank detail update request with return path mismatch and 4 URLs. Failed SPF/DMARC with URL marked as final malicious. BEC attempt with spoofing.
+D8526,Malicious,0.88,VPN/MFA reset request with high metadata suspicious score (0.579) and user marked as spam before. Very high SMTP IP reputation risk (0.980). Credential phishing.
+D8527,Malicious,0.98,Wire transfer request with sender marked as known malicious. High behavioral sandbox score (0.775) and exfiltration behavior (0.680). Confirmed malicious sender with wire fraud.
+D8528,Warning,0.80,Document download request with high AMSI suspicion score (0.695) and very high SMTP IP reputation risk (0.971). Failed SPF/DMARC. Malware delivery attempt.
+D8529,Spam,0.65,No request type with minimal threat indicators and low spam score (0.339). High SMTP IP reputation risk but overall low threat. Marketing content.
+D8530,Warning,0.75,Sensitive data request with DMARC enforced and user marked as spam before. Expired SSL certificate with failed DKIM/DMARC. Moderate phishing attempt.
+D8531,Malicious,0.95,Meeting request with 2 malicious attachment count and high sender temp email likelihood (0.746). Expired SSL with behavioral sandbox score (0.211). High confidence malware.
+D8532,Malicious,0.90,No request type with VBScript detected and very high exfiltration behavior (0.998). High behavioral sandbox score (0.630) with very high spam score (0.977). Macro malware with data theft.

@@ -1,0 +1,101 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D1,Warning,0.75,MEDIUM RISK: High exfiltration behavior score (0.902) but no active malicious indicators; SPF softfail and DMARC failure indicate authentication issues
+D2,Warning,0.80,MEDIUM RISK: High exfiltration behavior score (0.993) with packer detected and ActiveX objects; authentication issues but no confirmed malicious components
+D3,No Action,0.70,LOW RISK: Authentication failures (SPF fail) with very low domain reputation but no active threats or suspicious content
+D4,Warning,0.65,MEDIUM RISK: DMARC failure with low reputation scores; exfiltration behavior score (0.770) suggests potential risk
+D5,No Action,0.75,LOW RISK: Authentication failures but very low threat indicators; reputation scores acceptable
+D6,No Action,0.80,LOW RISK: Good authentication profile (SPF pass); low sender reputation but no active threats
+D7,Warning,0.85,MEDIUM RISK: High exfiltration behavior score (0.895) with authentication passed but low reputation scores
+D8,Warning,0.75,MEDIUM RISK: Authentication failures with very low reputation; 1 component detected but no clear spam indicators
+D9,Warning,0.70,MEDIUM RISK: Multiple authentication failures (SPF, DKIM, DMARC) but no active malicious indicators
+D10,Warning,0.65,MEDIUM RISK: Low reputation scores with behavioral sandbox activity (0.061) but authentication passed
+D11,Malicious,0.95,HIGH RISK: 3 malicious components detected with sensitive data request type - clear threat
+D12,Warning,0.70,MEDIUM RISK: Authentication failures with low reputation but minimal behavioral indicators
+D13,Warning,0.65,MEDIUM RISK: Authentication failures (SPF, DMARC) with low reputation scores
+D14,No Action,0.70,LOW RISK: Authentication failures but very low behavioral scores and threat indicators
+D15,Warning,0.85,MEDIUM RISK: High exfiltration behavior score (0.906) with authentication failures
+D16,Warning,0.75,MEDIUM RISK: 1 URL detected with invoice payment request; behavioral sandbox score (0.563) indicates suspicion
+D17,Warning,0.70,MEDIUM RISK: Authentication failures with moderate behavioral scores (0.244)
+D18,No Action,0.75,LOW RISK: Good authentication (SPF pass) with minimal risk indicators
+D19,Malicious,0.95,HIGH RISK: 3 malicious components detected with authentication issues - confirmed threat
+D20,Warning,0.70,MEDIUM RISK: Authentication passed but low reputation and SSL certificate mismatch
+D21,Warning,0.85,MEDIUM RISK: Gift card request with single component detected; authentication failures suggest suspicious activity
+D22,No Action,0.80,LOW RISK: Good authentication (SPF, DMARC pass) with acceptable reputation scores
+D23,Warning,0.80,MEDIUM RISK: 7 YARA matches with credential request; moderate behavioral scores but no confirmed spam indicators
+D24,No Action,0.75,LOW RISK: Executable attachment but good authentication and no confirmed malicious indicators
+D25,Malicious,0.95,HIGH RISK: Final URL is malicious with authentication failures - confirmed threat
+D26,No Action,0.70,LOW RISK: Authentication failures but minimal threat indicators and acceptable behavioral scores
+D27,No Action,0.65,LOW RISK: Authentication failures but very low behavioral risk indicators
+D28,Spam,0.85,SPAM: Bulk message detected with unsubscribe link and low reputation
+D29,Warning,0.85,MEDIUM RISK: High exfiltration score (0.951) with document download but single component
+D30,Warning,0.75,MEDIUM RISK: IOCs and ActiveX detected with moderate behavioral scores; no clear spam indicators
+D31,No Action,0.70,LOW RISK: Authentication failures but minimal threat indicators
+D32,No Action,0.70,LOW RISK: Authentication failures but good SSL and minimal threat indicators
+D33,Spam,0.80,SPAM: Gift card request with bulk message indicators and authentication failures
+D34,Warning,0.80,MEDIUM RISK: Multiple URLs (5) with reply path issues but authentication passed
+D35,No Action,0.75,LOW RISK: Authentication failures with very low reputation but no confirmed active threats
+D36,Warning,0.80,MEDIUM RISK: DNS morphing with high exfiltration score (0.834); authentication failures but no spam indicators
+D37,Warning,0.85,MEDIUM RISK: Very high AMSI suspicion score (0.983) with moderate behavioral indicators
+D38,Warning,0.85,MEDIUM RISK: VPN/MFA reset request with moderate component detection
+D39,No Action,0.70,LOW RISK: Authentication failures with moderate reputation but minimal active threats
+D40,No Action,0.75,LOW RISK: Good authentication (SPF pass) with minimal threat indicators
+D41,Malicious,0.95,HIGH RISK: 4 malicious components with bank detail update request - clear fraud attempt
+D42,Spam,0.80,SPAM: Bulk message detected with invoice verification request and authentication failures
+D43,Warning,0.80,MEDIUM RISK: Multiple components detected but good reputation suggests false positive
+D44,Malicious,0.95,HIGH RISK: 1 malicious component with bank detail update and final URL malicious
+D45,Malicious,0.95,HIGH RISK: Known malicious sender with 5 components and gift card request - confirmed threat
+D46,No Action,0.80,LOW RISK: Good authentication (SPF, DMARC pass) with acceptable reputation scores
+D47,Warning,0.85,MEDIUM RISK: High exfiltration score (0.807) but exploit pattern detection may be false positive
+D48,Spam,0.75,SPAM: Bulk message with marketing keywords and unsubscribe link present
+D49,No Action,0.65,LOW RISK: SSL certificate issues but very minimal threat indicators
+D50,Warning,0.75,MEDIUM RISK: 3 components detected with authentication failures; no clear spam indicators
+D51,Warning,0.75,MEDIUM RISK: 2 YARA matches with moderate behavioral scores; good authentication but suspicious patterns
+D52,No Action,0.65,LOW RISK: Authentication failures with low reputation but minimal threat indicators
+D53,No Action,0.60,LOW RISK: Authentication failures with low reputation but very minimal threats
+D54,Spam,0.75,SPAM: Gift card request with authentication passed but expired SSL certificate
+D55,Spam,0.80,SPAM: Bank detail update with authentication failures and expired SSL
+D56,No Action,0.65,LOW RISK: Authentication and SSL issues but minimal behavioral threats
+D57,Warning,0.85,MEDIUM RISK: Sender spoofing with suspicious attachment but single component
+D58,Warning,0.80,MEDIUM RISK: Packer detected with moderate behavioral scores; no clear spam indicators
+D59,Malicious,0.95,HIGH RISK: Known malicious sender with authentication failures - confirmed threat
+D60,Warning,0.85,MEDIUM RISK: High behavioral sandbox score (0.895) with wire transfer request; below malicious threshold
+D61,Warning,0.70,MEDIUM RISK: Multiple authentication failures with moderate reputation; no clear spam indicators
+D62,Malicious,0.95,HIGH RISK: Malicious reply path with executable attachment and wire transfer request
+D63,Warning,0.75,MEDIUM RISK: Invoice payment with moderate behavioral scores; no clear spam indicators
+D64,Warning,0.80,MEDIUM RISK: Packer detected with urgent callback but moderate component count
+D65,No Action,0.65,LOW RISK: Low reputation with moderate behavioral scores but minimal confirmed threats
+D66,Warning,0.80,MEDIUM RISK: High brand impersonation score (0.901) with authentication failures; suspicious but no spam indicators
+D67,Warning,0.80,MEDIUM RISK: URL flagged as malicious but good authentication suggests false positive
+D68,Warning,0.85,MEDIUM RISK: Very high exfiltration score (0.990) with authentication failures; suspicious data behavior
+D69,Warning,0.80,MEDIUM RISK: Legal threat request with 5 components detected; reply path known malicious but no spam indicators
+D70,Warning,0.80,MEDIUM RISK: Document download with multiple URLs but single component detection
+D71,Warning,0.75,MEDIUM RISK: Gift card request with authentication failures; moderate behavioral scores but no spam indicators
+D72,Warning,0.75,MEDIUM RISK: 2 IOCs detected with good authentication; moderate behavioral scores
+D73,Malicious,0.95,HIGH RISK: Malicious return path with urgent callback - confirmed threat
+D74,Warning,0.80,MEDIUM RISK: Sender spoofing detected with network calls and moderate behavioral scores
+D75,No Action,0.75,LOW RISK: Authentication passed and final URL has very low malicious score
+D76,Warning,0.85,MEDIUM RISK: High exfiltration score (0.846) with moderate component detection
+D77,Warning,0.75,MEDIUM RISK: Wire transfer request with 2 components detected; no clear spam indicators
+D78,Warning,0.75,MEDIUM RISK: Wire transfer request with good authentication; no clear spam indicators
+D79,Warning,0.80,MEDIUM RISK: Gift card request with exploit pattern and ActiveX; good authentication but suspicious behavior
+D80,Malicious,0.95,HIGH RISK: Very high behavioral sandbox score (0.940) with YARA matches
+D81,Malicious,0.95,HIGH RISK: Known malicious domain with high exfiltration score (0.820) and ActiveX
+D82,Malicious,0.95,HIGH RISK: Known malicious sender with very low reputation - confirmed threat
+D83,Malicious,0.95,HIGH RISK: Malicious return path with 4 components and exploit pattern detected
+D84,Malicious,0.95,HIGH RISK: 5 malicious components detected with authentication failures
+D85,Warning,0.75,MEDIUM RISK: Wire transfer request with authentication failures; no clear spam indicators
+D86,Spam,0.85,SPAM: Bulk message detected with very low reputation
+D87,Warning,0.80,MEDIUM RISK: Multiple components detected but authentication failures reduce threat certainty
+D88,Malicious,0.95,HIGH RISK: Known malicious domain with low reputation - confirmed threat
+D89,Warning,0.75,MEDIUM RISK: Gift card request with authentication failures; no clear spam indicators
+D90,Malicious,0.95,HIGH RISK: High exfiltration score (0.945) with wire transfer request
+D91,Malicious,0.95,HIGH RISK: 3 malicious components with high exfiltration score (0.943)
+D92,Warning,0.80,MEDIUM RISK: 5 components with authentication failures and bulk message; borderline case
+D93,Warning,0.75,MEDIUM RISK: Sensitive data request with authentication failures; no clear spam indicators
+D94,Malicious,0.95,HIGH RISK: Exploit pattern with 4 IOCs detected - confirmed threat
+D95,No Action,0.75,LOW RISK: High behavioral scores but good authentication and reputation indicate legitimate content
+D96,No Action,0.70,LOW RISK: Domain flagged but very low behavioral scores suggest false positive
+D97,Warning,0.80,MEDIUM RISK: Legal threat request with 5 components; high behavioral scores but no spam indicators
+D98,Warning,0.80,MEDIUM RISK: Executable attachment with 5 YARA matches; moderate behavioral scores but no spam indicators
+D99,Malicious,0.95,HIGH RISK: 5 malicious components with bank detail update - confirmed fraud
+D100,No Action,0.70,LOW RISK: VPN/MFA reset with authentication failures but minimal threat indicators
